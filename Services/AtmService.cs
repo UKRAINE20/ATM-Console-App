@@ -10,10 +10,12 @@ namespace ATM.Console.Services
         private readonly JsonRepository _repository;
         private User _currentUser;
 
-        public AtmService()
-        {
-            _repository = new JsonRepository();
-        }
+       public AtmService(IUserRepository repository)
+       {
+        _repository = repository;
+       }
+    
+       public AtmService() : this(new JsonRepository()) { }
 
         public bool Login(string cardNumber, string pin)
         {
