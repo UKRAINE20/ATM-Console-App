@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ATM.Console.Repositories
 {
-    public class JsonRepository
+    public class JsonRepository : IUserRepository
     {
         private readonly string _usersPath = "Data/users.json";
         private readonly string _transactionsPath = "Data/transactions.json";
