@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|c:\\users\\sonya\\desktop\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\\u043A\u043F\u0437\\atm.console\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|c:\\users\\sonya\\desktop\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\\u043A\u043F\u0437\\atm.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Services\\AtmService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:Services\\AtmService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\IdleState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:States\\IdleState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\IAtmState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:States\\IAtmState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Repositories\\JsonRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:Repositories\\JsonRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\MainMenuState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:States\\MainMenuState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Models\\Transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:Models\\Transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B15D18EB-9774-4E4C-BD98-0090F66DD584}|ATM.Console.csproj|solutionrelative:Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-05-17T16:31:09.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IdleState.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\IdleState.cs",
+              "RelativeDocumentMoniker": "States\\IdleState.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\IdleState.cs",
+              "RelativeToolTip": "States\\IdleState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T14:55:08.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAtmState.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\IAtmState.cs",
+              "RelativeDocumentMoniker": "States\\IAtmState.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\IAtmState.cs",
+              "RelativeToolTip": "States\\IAtmState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T14:54:28.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AtmService.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Services\\AtmService.cs",
+              "RelativeDocumentMoniker": "Services\\AtmService.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Services\\AtmService.cs",
+              "RelativeToolTip": "Services\\AtmService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAwHQAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T14:51:05.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JsonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Repositories\\JsonRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\JsonRepository.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Repositories\\JsonRepository.cs",
+              "RelativeToolTip": "Repositories\\JsonRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T14:37:18.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T13:45:51.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainMenuState.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\MainMenuState.cs",
+              "RelativeDocumentMoniker": "States\\MainMenuState.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\States\\MainMenuState.cs",
+              "RelativeToolTip": "States\\MainMenuState.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T14:56:07.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Models\\Transaction.cs",
+              "RelativeToolTip": "Models\\Transaction.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T14:22:22.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Sonya\\Desktop\\\u041F\u041E\u041B\u0406\u0422\u0415\u0425\\\u041A\u041F\u0417\\ATM.Console\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T13:53:00.893Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

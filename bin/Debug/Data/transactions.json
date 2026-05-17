@@ -1,0 +1,29 @@
+[
+  {
+    "Id": "f547eea4-12ba-452d-9586-91270874a3b5",
+    "CardNumber": "0000000000000000",
+    "Type": "Deposit",
+    "Amount": 5000,
+    "BalanceAfter": 75000,
+    "Date": "2026-05-17T18:33:57.3785082+03:00",
+    "TargetCard": null
+  },
+  {
+    "Id": "3e8f2859-605f-4084-8787-8dd27abbf76c",
+    "CardNumber": "0000000000000000",
+    "Type": "Withdraw",
+    "Amount": 400,
+    "BalanceAfter": 74600,
+    "Date": "2026-05-17T18:34:05.8906968+03:00",
+    "TargetCard": null
+  },
+  {
+    "Id": "2b8e5bde-5ae6-4eba-a1b8-f0a820e2cbd2",
+    "CardNumber": "0000000000000000",
+    "Type": "PinChange",
+    "Amount": 0,
+    "BalanceAfter": 74600,
+    "Date": "2026-05-17T19:09:51.7233629+03:00",
+    "TargetCard": null
+  }
+]

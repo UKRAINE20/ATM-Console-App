@@ -1,0 +1,20 @@
+[
+  {
+    "CardNumber": "9965656342482134",
+    "Pin": "5501",
+    "FullName": "\u041E\u043B\u0435\u0436\u043A\u043E \u0412\u0430\u0434\u0438\u043C",
+    "Balance": 6000,
+    "IsBlocked": false,
+    "FailedAttempts": 0,
+    "CreatedAt": "2026-05-17T18:27:06.064006+03:00"
+  },
+  {
+    "CardNumber": "0000000000000000",
+    "Pin": "3333",
+    "FullName": "\u041E\u043C\u0435\u043B\u044C\u043A\u043E \u041B\u0456\u043B\u0456\u044F",
+    "Balance": 74600,
+    "IsBlocked": true,
+    "FailedAttempts": 3,
+    "CreatedAt": "2026-05-17T18:33:10.2321695+03:00"
+  }
+]
