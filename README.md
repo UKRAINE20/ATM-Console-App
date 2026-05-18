@@ -25,7 +25,7 @@
 - Spectre.Console (красивий UI)
 - System.Text.Json (збереження даних)
 
-## Programming Principles (5+)
+## Programming Principles 
 
 - **Single Responsibility Principle** — кожен клас відповідає за свою зону (Repository — тільки робота з файлами, Service — бізнес-логіка).
 - **Open/Closed Principle** — легко додавати нові операції через State Pattern.
@@ -34,7 +34,7 @@
 - **DRY (Don't Repeat Yourself)** — методи збереження/завантаження даних винесені в репозиторій.
 - **KISS** — код зроблено максимально зрозумілим.
 
-## Design Patterns (3+)
+## Design Patterns 
 
 1. **State Pattern** — `IAtmState`, `IdleState`, `MainMenuState` — керування станами банкомата (`States/`).
 2. **Repository Pattern** — `JsonRepository` для роботи з файлами.
