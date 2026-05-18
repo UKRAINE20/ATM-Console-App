@@ -5,14 +5,22 @@ using System.Linq;
 
 namespace ATM.Console.Services
 {
+    public interface IAtmRepository
+    {
+        List<User> LoadUsers();
+        void SaveUsers(List<User> users);
+        List<Transaction> LoadTransactions();
+        void SaveTransactions(List<Transaction> transactions);
+    }
+
     public class AtmService
     {
-        private readonly JsonRepository _repository;
+        private readonly IAtmRepository _repository;
         private User _currentUser;
 
-        public AtmService()
+        public AtmService(IAtmRepository repository)
         {
-            _repository = new JsonRepository();
+            _repository = repository;
         }
 
         public bool Login(string cardNumber, string pin)
@@ -140,7 +148,6 @@ namespace ATM.Console.Services
 
         public List<User> GetAllUsers() => _repository.LoadUsers();
 
-        // Реєстрація нового користувача
         public bool RegisterUser(string cardNumber, string pin, string fullName, decimal initialBalance)
         {
             var users = _repository.LoadUsers();
@@ -165,17 +172,14 @@ namespace ATM.Console.Services
             return true;
         }
 
-        // Зміна PIN-коду
         public bool ChangePin(string oldPin, string newPin)
         {
             if (_currentUser == null)
                 return false;
 
-            // Перевірка старого PIN
             if (_currentUser.Pin != oldPin)
                 return false;
 
-            // Перевірка нового PIN (має бути 4 цифри)
             if (string.IsNullOrWhiteSpace(newPin) || newPin.Length != 4 || !newPin.All(char.IsDigit))
                 return false;
 

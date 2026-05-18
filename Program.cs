@@ -1,5 +1,6 @@
 ﻿using ATM.Console.Services;
 using ATM.Console.States;
+using ATM.Console.Repositories; // Додали юзінг для репозиторію
 using Spectre.Console;
 using System;
 using System.Linq;
@@ -9,13 +10,17 @@ namespace ATM.Console
 {
     public class Program
     {
-        private static AtmService _service = new AtmService();
+        private static AtmService _service;
         private static IAtmState _currentState;
 
         static void Main(string[] args)
         {
             System.Console.OutputEncoding = System.Text.Encoding.UTF8;
             System.Console.InputEncoding = System.Text.Encoding.UTF8;
+            
+            var repository = new JsonRepository();
+            _service = new AtmService(repository);
+
             _currentState = new IdleState(_service);
 
             while (true)
