@@ -17,8 +17,8 @@ namespace ATM.Console.Services
 
         public bool Login(string cardNumber, string pin)
         {
-            var users = _repository.LoadUsers();
-            var user = users.FirstOrDefault(u => u.CardNumber == cardNumber);
+            List<User> users = _repository.LoadUsers();
+            User user = users.FirstOrDefault(u => u.CardNumber == cardNumber);
 
             if (user == null || user.IsBlocked)
                 return false;
@@ -57,19 +57,12 @@ namespace ATM.Console.Services
         {
             if (_currentUser == null || amount <= 0) return false;
 
-            var users = _repository.LoadUsers();
-            var user = users.FirstOrDefault(u => u.CardNumber == _currentUser.CardNumber);
+            _currentUser.Balance += amount;
 
-            if (user != null)
-            {
-                user.Balance += amount;
-                _currentUser.Balance = user.Balance;
+            UpdateUserInList();
+            SaveTransaction("Deposit", amount, _currentUser.Balance);
 
-                SaveTransaction("Deposit", amount, user.Balance);
-                _repository.SaveUsers(users);
-                return true;
-            }
-            return false;
+            return true;
         }
 
         public bool Withdraw(decimal amount)
@@ -77,19 +70,12 @@ namespace ATM.Console.Services
             if (_currentUser == null || amount <= 0 || _currentUser.Balance < amount)
                 return false;
 
-            var users = _repository.LoadUsers();
-            var user = users.FirstOrDefault(u => u.CardNumber == _currentUser.CardNumber);
+            _currentUser.Balance -= amount;
 
-            if (user != null)
-            {
-                user.Balance -= amount;
-                _currentUser.Balance = user.Balance;
+            UpdateUserInList();
+            SaveTransaction("Withdraw", amount, _currentUser.Balance);
 
-                SaveTransaction("Withdraw", amount, user.Balance);
-                _repository.SaveUsers(users);
-                return true;
-            }
-            return false;
+            return true;
         }
 
         public bool Transfer(string targetCard, decimal amount)
@@ -97,9 +83,9 @@ namespace ATM.Console.Services
             if (_currentUser == null || amount <= 0 || _currentUser.Balance < amount)
                 return false;
 
-            var users = _repository.LoadUsers();
-            var sender = users.FirstOrDefault(u => u.CardNumber == _currentUser.CardNumber);
-            var receiver = users.FirstOrDefault(u => u.CardNumber == targetCard);
+            List<User> users = _repository.LoadUsers();
+            User sender = users.FirstOrDefault(u => u.CardNumber == _currentUser.CardNumber);
+            User receiver = users.FirstOrDefault(u => u.CardNumber == targetCard);
 
             if (sender != null && receiver != null)
             {
@@ -116,8 +102,8 @@ namespace ATM.Console.Services
 
         private void SaveTransaction(string type, decimal amount, decimal balanceAfter, string targetCard = null)
         {
-            var transactions = _repository.LoadTransactions();
-            var transaction = new Transaction
+            List<Transaction> transactions = _repository.LoadTransactions();
+            Transaction transaction = new Transaction
             {
                 CardNumber = _currentUser?.CardNumber ?? "",
                 Type = type,
@@ -132,7 +118,7 @@ namespace ATM.Console.Services
 
         public List<Transaction> GetTransactionHistory()
         {
-            var all = _repository.LoadTransactions();
+            List<Transaction> all = _repository.LoadTransactions();
             return all.Where(t => t.CardNumber == _currentUser?.CardNumber)
                       .OrderByDescending(t => t.Date)
                       .ToList();
@@ -140,17 +126,16 @@ namespace ATM.Console.Services
 
         public List<User> GetAllUsers() => _repository.LoadUsers();
 
-        // Реєстрація нового користувача
         public bool RegisterUser(string cardNumber, string pin, string fullName, decimal initialBalance)
         {
-            var users = _repository.LoadUsers();
+            List<User> users = _repository.LoadUsers();
 
             if (users.Any(u => u.CardNumber == cardNumber))
             {
                 return false;
             }
 
-            var newUser = new User
+            User newUser = new User
             {
                 CardNumber = cardNumber,
                 Pin = pin,
@@ -165,34 +150,36 @@ namespace ATM.Console.Services
             return true;
         }
 
-        // Зміна PIN-коду
         public bool ChangePin(string oldPin, string newPin)
         {
-            if (_currentUser == null)
+            if (_currentUser == null || _currentUser.Pin != oldPin)
                 return false;
 
-            // Перевірка старого PIN
-            if (_currentUser.Pin != oldPin)
-                return false;
-
-            // Перевірка нового PIN (має бути 4 цифри)
             if (string.IsNullOrWhiteSpace(newPin) || newPin.Length != 4 || !newPin.All(char.IsDigit))
                 return false;
 
-            var users = _repository.LoadUsers();
-            var user = users.FirstOrDefault(u => u.CardNumber == _currentUser.CardNumber);
+            _currentUser.Pin = newPin;
 
-            if (user != null)
+            UpdateUserInList();
+            SaveTransaction("PinChange", 0, _currentUser.Balance);
+
+            return true;
+        }
+
+        private void UpdateUserInList()
+        {
+            List<User> users = _repository.LoadUsers();
+            User userInDb = users.FirstOrDefault(u => u.CardNumber == _currentUser.CardNumber);
+
+            if (userInDb != null)
             {
-                user.Pin = newPin;
-                _currentUser.Pin = newPin;
+                userInDb.Balance = _currentUser.Balance;
+                userInDb.Pin = _currentUser.Pin;
+                userInDb.FailedAttempts = _currentUser.FailedAttempts;
+                userInDb.IsBlocked = _currentUser.IsBlocked;
 
-                SaveTransaction("PinChange", 0, user.Balance);
                 _repository.SaveUsers(users);
-                return true;
             }
-
-            return false;
         }
     }
 }
